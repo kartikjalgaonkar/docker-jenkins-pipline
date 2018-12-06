@@ -75,6 +75,9 @@ public class CustomerController {
 		if (customerModel == null) {
 			return new ResponseEntity<String>(HttpStatus.NOT_FOUND);
 		}
+		
+		
+		
 		customerService.deleteCustomer(customerModel.getCustomerId());
 		return new ResponseEntity<String>(HttpStatus.OK);
 	}
