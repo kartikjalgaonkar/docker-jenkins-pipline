@@ -1,11 +1,10 @@
-pipeline {
-    def app
+pipeline {    
     stages {
         stage('clone repository') {
             checkout scm
         }
         stage('build image') {
-            app=docker.build("ishatiwari26/docker-jenkins-pipline")
+           def app=docker.build("ishatiwari26/docker-jenkins-pipline")
         }    
     }
 }
