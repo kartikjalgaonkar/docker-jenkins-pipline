@@ -11,7 +11,7 @@ node {
         /* This builds the actual image; synonymous to
          * docker build on the command line */
 
-        app = docker.build("ishatiwari26/docker-jenkins-pipline")
+        app = docker.build("isha30/docker-jenkins-pipline")
     }
 
     stage('Push image') {
